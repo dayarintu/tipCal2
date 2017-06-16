@@ -15,12 +15,13 @@
 		63D88BD01EF4659900EF90E4 /* dollar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63D88BCF1EF4659900EF90E4 /* dollar.gif */; };
 		63D88BD51EF46B1B00EF90E4 /* swift+gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D88BD41EF46B1B00EF90E4 /* swift+gif.swift */; };
 		63D88BD71EF46B2E00EF90E4 /* sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D88BD61EF46B2E00EF90E4 /* sound.swift */; };
+		63D88BD91EF46C0600EF90E4 /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63D88BD81EF46C0600EF90E4 /* coin.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63D88BB81EF464ED00EF90E4 /* tipCalC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipCalC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		63D88BBB1EF464ED00EF90E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63D88BBD1EF464ED00EF90E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63D88BBB1EF464ED00EF90E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = tipCalC/AppDelegate.swift; sourceTree = "<group>"; };
+		63D88BBD1EF464ED00EF90E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = tipCalC/ViewController.swift; sourceTree = "<group>"; };
 		63D88BC21EF464ED00EF90E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D88BC51EF464ED00EF90E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63D88BC71EF464ED00EF90E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		63D88BCF1EF4659900EF90E4 /* dollar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dollar.gif; sourceTree = "<group>"; };
 		63D88BD41EF46B1B00EF90E4 /* swift+gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "swift+gif.swift"; sourceTree = "<group>"; };
 		63D88BD61EF46B2E00EF90E4 /* sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sound.swift; sourceTree = "<group>"; };
+		63D88BD81EF46C0600EF90E4 /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,10 @@
 		63D88BBA1EF464ED00EF90E4 /* tipCalC */ = {
 			isa = PBXGroup;
 			children = (
+				63D88BDC1EF4739100EF90E4 /* Media */,
+				63D88BDB1EF4737F00EF90E4 /* View */,
 				63D88BD31EF46B0500EF90E4 /* Model */,
-				63D88BBB1EF464ED00EF90E4 /* AppDelegate.swift */,
-				63D88BBD1EF464ED00EF90E4 /* ViewController.swift */,
-				63D88BCD1EF4655E00EF90E4 /* Main.storyboard */,
-				63D88BCF1EF4659900EF90E4 /* dollar.gif */,
-				63D88BC21EF464ED00EF90E4 /* Assets.xcassets */,
-				63D88BC41EF464ED00EF90E4 /* LaunchScreen.storyboard */,
-				63D88BC71EF464ED00EF90E4 /* Info.plist */,
+				63D88BDA1EF4736300EF90E4 /* Controller */,
 			);
 			path = tipCalC;
 			sourceTree = "<group>";
@@ -79,6 +77,36 @@
 				63D88BD61EF46B2E00EF90E4 /* sound.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		63D88BDA1EF4736300EF90E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63D88BBB1EF464ED00EF90E4 /* AppDelegate.swift */,
+				63D88BBD1EF464ED00EF90E4 /* ViewController.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		63D88BDB1EF4737F00EF90E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63D88BCD1EF4655E00EF90E4 /* Main.storyboard */,
+				63D88BC21EF464ED00EF90E4 /* Assets.xcassets */,
+				63D88BC41EF464ED00EF90E4 /* LaunchScreen.storyboard */,
+				63D88BC71EF464ED00EF90E4 /* Info.plist */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63D88BDC1EF4739100EF90E4 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				63D88BCF1EF4659900EF90E4 /* dollar.gif */,
+				63D88BD81EF46C0600EF90E4 /* coin.mp3 */,
+			);
+			name = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D88BD01EF4659900EF90E4 /* dollar.gif in Resources */,
+				63D88BD91EF46C0600EF90E4 /* coin.mp3 in Resources */,
 				63D88BC61EF464ED00EF90E4 /* LaunchScreen.storyboard in Resources */,
 				63D88BC31EF464ED00EF90E4 /* Assets.xcassets in Resources */,
 				63D88BCE1EF4655E00EF90E4 /* Main.storyboard in Resources */,

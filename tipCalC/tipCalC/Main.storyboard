@@ -77,6 +77,9 @@
                                                             <segment title="25%"/>
                                                         </segments>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <connections>
+                                                            <action selector="TipPercentSelector:" destination="BYZ-38-t0r" eventType="valueChanged" id="U5R-f7-feu"/>
+                                                        </connections>
                                                     </segmentedControl>
                                                 </subviews>
                                             </stackView>
@@ -151,6 +154,9 @@
                                 <state key="normal" title="clear">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDi-Mw-OwH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-DJ-xgd">
                                 <rect key="frame" x="16" y="305" width="150" height="35"/>
@@ -163,6 +169,9 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMp-VH-nhZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -177,10 +186,17 @@
                             <constraint firstItem="mLX-DJ-xgd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yY4-RT-BLh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AmountTextField" destination="mZY-zS-FL7" id="Adn-Il-Jfs"/>
+                        <outlet property="TipAmountTextField" destination="S8y-iQ-nst" id="Xe8-DR-Bb0"/>
+                        <outlet property="TipOutlet" destination="jXj-SL-ZCZ" id="QeA-wj-hhN"/>
+                        <outlet property="gifview" destination="vlu-iv-Dgn" id="2Ln-c0-s3N"/>
+                        <outlet property="totalAmountField" destination="ZgU-by-eWF" id="3HQ-uA-Jhz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4952" y="-2404"/>
+            <point key="canvasLocation" x="-4613" y="-2443"/>
         </scene>
     </scenes>
     <resources>

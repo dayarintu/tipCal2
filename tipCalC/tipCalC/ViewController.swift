@@ -10,16 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     @IBOutlet weak var AmountTextField: UITextField!
     
+
     @IBOutlet weak var TipAmountTextField: UITextField!
     
-    @IBOutlet weak var TipOutlet: UISegmentedControl!
+    
     
     @IBOutlet weak var totalAmountField: UITextField!
+
+    
     
     @IBOutlet weak var gifview: UIImageView!
     
+    @IBOutlet weak var TipOutlet: UISegmentedControl!
     
     override func viewDidLoad() {
         gifview.loadGif(name: "dollar")
