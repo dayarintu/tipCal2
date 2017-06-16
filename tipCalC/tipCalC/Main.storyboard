@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tipCalC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x5Y-f0-Fdy">
+                                <rect key="frame" x="8" y="28" width="304" height="269.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vlu-iv-Dgn">
+                                        <rect key="frame" x="81" y="0.0" width="142" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="yLT-kT-kY3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Pg7-vd-5Ve">
+                                        <rect key="frame" x="8" y="128" width="288" height="141.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="qA0-eV-LO7">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="32"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cq-kv-wi4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="32"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter $" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mZY-zS-FL7">
+                                                        <rect key="frame" x="159" y="0.0" width="129" height="32"/>
+                                                        <color key="backgroundColor" white="0.85465494789999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="M6S-64-ZtY"/>
+                                                            <constraint firstAttribute="width" constant="129" id="uMl-eE-jxb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="HXu-qd-P4v">
+                                                <rect key="frame" x="0.0" y="37" width="288" height="30.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibx-dW-vW7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="30.5"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-SL-ZCZ">
+                                                        <rect key="frame" x="159" y="0.0" width="129" height="31.5"/>
+                                                        <color key="backgroundColor" white="0.85465494789999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="129" id="UtM-6B-GFc"/>
+                                                        </constraints>
+                                                        <segments>
+                                                            <segment title="15%"/>
+                                                            <segment title="20%"/>
+                                                            <segment title="25%"/>
+                                                        </segments>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-b0-QyU">
+                                                <rect key="frame" x="0.0" y="72.5" width="288" height="32"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lB6-d2-Il9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="32"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter $" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8y-iQ-nst">
+                                                        <rect key="frame" x="159" y="0.0" width="129" height="32"/>
+                                                        <color key="backgroundColor" white="0.85465494789999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="129" id="eej-cK-HFB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Cn3-lU-Ym9">
+                                                <rect key="frame" x="0.0" y="109.5" width="288" height="32"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Total                  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GE8-mZ-LGX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="32"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Total $" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZgU-by-eWF">
+                                                        <rect key="frame" x="159" y="0.0" width="129" height="32"/>
+                                                        <color key="backgroundColor" white="0.85465494789999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="129" id="1ld-uN-6uL"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qA0-eV-LO7" firstAttribute="leading" secondItem="Pg7-vd-5Ve" secondAttribute="leading" id="7fT-wR-X1E"/>
+                                            <constraint firstAttribute="trailing" secondItem="HXu-qd-P4v" secondAttribute="trailing" id="ARq-TP-pZt"/>
+                                            <constraint firstAttribute="trailing" secondItem="qA0-eV-LO7" secondAttribute="trailing" id="Bpo-WP-hgf"/>
+                                            <constraint firstAttribute="trailing" secondItem="PKc-b0-QyU" secondAttribute="trailing" id="Hgi-4N-NAl"/>
+                                            <constraint firstItem="PKc-b0-QyU" firstAttribute="leading" secondItem="Pg7-vd-5Ve" secondAttribute="leading" id="Tdz-WA-6RB"/>
+                                            <constraint firstItem="Cn3-lU-Ym9" firstAttribute="leading" secondItem="Pg7-vd-5Ve" secondAttribute="leading" id="f8Q-2b-I5G"/>
+                                            <constraint firstItem="HXu-qd-P4v" firstAttribute="leading" secondItem="Pg7-vd-5Ve" secondAttribute="leading" id="ssb-Iq-GNw"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cn3-lU-Ym9" secondAttribute="trailing" id="tUd-qe-rmI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vlu-iv-Dgn" firstAttribute="leading" secondItem="x5Y-f0-Fdy" secondAttribute="leading" constant="81" id="NhN-Zd-uaX"/>
+                                    <constraint firstItem="Pg7-vd-5Ve" firstAttribute="leading" secondItem="x5Y-f0-Fdy" secondAttribute="leading" constant="8" id="gnI-sB-AfZ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-kw-FOh">
+                                <rect key="frame" x="175" y="305" width="129" height="35"/>
+                                <color key="backgroundColor" red="0.58116602897644043" green="0.49511992931365967" blue="0.23016375303268433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="OPo-gS-Qxp"/>
+                                    <constraint firstAttribute="height" constant="35" id="w2J-0J-7DM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="35"/>
+                                <state key="normal" title="clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-DJ-xgd">
+                                <rect key="frame" x="16" y="305" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.58116602897644043" green="0.49511992931365967" blue="0.23016375303268433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="2h9-wT-uZ7"/>
+                                    <constraint firstAttribute="height" constant="35" id="flm-jN-KDL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="31"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x5Y-f0-Fdy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1B8-48-czB"/>
+                            <constraint firstAttribute="trailing" secondItem="x5Y-f0-Fdy" secondAttribute="trailing" constant="8" id="Arg-nq-bUr"/>
+                            <constraint firstItem="x5Y-f0-Fdy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="DCj-eY-mB2"/>
+                            <constraint firstItem="x5Y-f0-Fdy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="MJp-rl-9r2"/>
+                            <constraint firstItem="ZYX-kw-FOh" firstAttribute="top" secondItem="x5Y-f0-Fdy" secondAttribute="bottom" constant="7.5" id="SwA-Bb-ZMQ"/>
+                            <constraint firstItem="ZYX-kw-FOh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="W4q-hw-Uqx"/>
+                            <constraint firstItem="mLX-DJ-xgd" firstAttribute="top" secondItem="x5Y-f0-Fdy" secondAttribute="bottom" constant="7.5" id="eJN-Fc-wWe"/>
+                            <constraint firstItem="mLX-DJ-xgd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yY4-RT-BLh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4952" y="-2404"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dollar.gif" width="128" height="128"/>
+    </resources>
+</document>

@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		63D88BBC1EF464ED00EF90E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D88BBB1EF464ED00EF90E4 /* AppDelegate.swift */; };
 		63D88BBE1EF464ED00EF90E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D88BBD1EF464ED00EF90E4 /* ViewController.swift */; };
-		63D88BC11EF464ED00EF90E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D88BBF1EF464ED00EF90E4 /* Main.storyboard */; };
 		63D88BC31EF464ED00EF90E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D88BC21EF464ED00EF90E4 /* Assets.xcassets */; };
 		63D88BC61EF464ED00EF90E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D88BC41EF464ED00EF90E4 /* LaunchScreen.storyboard */; };
+		63D88BCE1EF4655E00EF90E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D88BCD1EF4655E00EF90E4 /* Main.storyboard */; };
+		63D88BD01EF4659900EF90E4 /* dollar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 63D88BCF1EF4659900EF90E4 /* dollar.gif */; };
+		63D88BD51EF46B1B00EF90E4 /* swift+gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D88BD41EF46B1B00EF90E4 /* swift+gif.swift */; };
+		63D88BD71EF46B2E00EF90E4 /* sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D88BD61EF46B2E00EF90E4 /* sound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63D88BB81EF464ED00EF90E4 /* tipCalC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipCalC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D88BBB1EF464ED00EF90E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D88BBD1EF464ED00EF90E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63D88BC01EF464ED00EF90E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63D88BC21EF464ED00EF90E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D88BC51EF464ED00EF90E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63D88BC71EF464ED00EF90E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D88BCD1EF4655E00EF90E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		63D88BCF1EF4659900EF90E4 /* dollar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dollar.gif; sourceTree = "<group>"; };
+		63D88BD41EF46B1B00EF90E4 /* swift+gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "swift+gif.swift"; sourceTree = "<group>"; };
+		63D88BD61EF46B2E00EF90E4 /* sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		63D88BBA1EF464ED00EF90E4 /* tipCalC */ = {
 			isa = PBXGroup;
 			children = (
+				63D88BD31EF46B0500EF90E4 /* Model */,
 				63D88BBB1EF464ED00EF90E4 /* AppDelegate.swift */,
 				63D88BBD1EF464ED00EF90E4 /* ViewController.swift */,
-				63D88BBF1EF464ED00EF90E4 /* Main.storyboard */,
+				63D88BCD1EF4655E00EF90E4 /* Main.storyboard */,
+				63D88BCF1EF4659900EF90E4 /* dollar.gif */,
 				63D88BC21EF464ED00EF90E4 /* Assets.xcassets */,
 				63D88BC41EF464ED00EF90E4 /* LaunchScreen.storyboard */,
 				63D88BC71EF464ED00EF90E4 /* Info.plist */,
 			);
 			path = tipCalC;
+			sourceTree = "<group>";
+		};
+		63D88BD31EF46B0500EF90E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63D88BD41EF46B1B00EF90E4 /* swift+gif.swift */,
+				63D88BD61EF46B2E00EF90E4 /* sound.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +141,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D88BD01EF4659900EF90E4 /* dollar.gif in Resources */,
 				63D88BC61EF464ED00EF90E4 /* LaunchScreen.storyboard in Resources */,
 				63D88BC31EF464ED00EF90E4 /* Assets.xcassets in Resources */,
-				63D88BC11EF464ED00EF90E4 /* Main.storyboard in Resources */,
+				63D88BCE1EF4655E00EF90E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +156,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D88BBE1EF464ED00EF90E4 /* ViewController.swift in Sources */,
+				63D88BD51EF46B1B00EF90E4 /* swift+gif.swift in Sources */,
 				63D88BBC1EF464ED00EF90E4 /* AppDelegate.swift in Sources */,
+				63D88BD71EF46B2E00EF90E4 /* sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63D88BBF1EF464ED00EF90E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63D88BC01EF464ED00EF90E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63D88BC41EF464ED00EF90E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -265,6 +277,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L5TGCNWYET;
 				INFOPLIST_FILE = tipCalC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daya.tipCalC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L5TGCNWYET;
 				INFOPLIST_FILE = tipCalC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daya.tipCalC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
