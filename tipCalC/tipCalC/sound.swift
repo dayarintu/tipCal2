@@ -10,12 +10,14 @@ import Foundation
 import AVFoundation
 
 
+// creating an audioplayer object
 
 var audioPlayer1 = AVAudioPlayer()
 func calculateSound() {
     
     let alertSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "coin", ofType: "mp3")!)
     
+    // do it and try if it has a value
     do {
         try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
     } catch{
@@ -31,6 +33,6 @@ func calculateSound() {
     } catch {
     }
     
-    audioPlayer1.prepareToPlay()
-    audioPlayer1.play()
+    audioPlayer1.prepareToPlay()  // preparing to play
+    audioPlayer1.play()   // triggers the play action
 }
