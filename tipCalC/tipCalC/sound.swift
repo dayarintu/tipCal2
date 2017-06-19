@@ -15,6 +15,9 @@ import AVFoundation
 var audioPlayer1 = AVAudioPlayer()
 func calculateSound() {
     
+    
+    // getting the sound file path to use it further
+    
     let alertSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "coin", ofType: "mp3")!)
     
     // do it and try if it has a value
