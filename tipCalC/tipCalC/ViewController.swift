@@ -36,8 +36,6 @@ class ViewController: UIViewController {
         TipAmountTextField.text = ""
         totalAmountField.text = ""
         
-        //TipPercentSelector(<#T##sender: UISegmentedControl##UISegmentedControl#>)
-        //UISegmentedControlSegment.hashValue = 0
         TipOutlet.selectedSegmentIndex = -1
     }
     
