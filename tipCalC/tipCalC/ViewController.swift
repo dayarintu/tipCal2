@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // creating outlets 
     
     @IBOutlet weak var AmountTextField: UITextField!
     
