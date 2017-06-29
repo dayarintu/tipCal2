@@ -60,6 +60,7 @@ class ViewController: UIViewController {
             AmountTextField.text = ""
         }
     }
+    // function to calculate tip
     
     @IBAction func calculateTip(_ sender: Any) {
         if AmountTextField.text != "" && TipAmountTextField.text != ""{
